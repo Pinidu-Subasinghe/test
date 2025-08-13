@@ -1,0 +1,26 @@
+const connection = require("../db");
+
+const createTableQuery = `
+CREATE TABLE IF NOT EXISTS registrations (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(100) NOT NULL,
+    last_name VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL,
+    company VARCHAR(150) NOT NULL,
+    job_title VARCHAR(100) NOT NULL,
+    phone VARCHAR(50),
+    country VARCHAR(50) NOT NULL,
+    attendance_type ENUM('in-person', 'virtual') DEFAULT 'in-person',
+    interests TEXT,
+    special_requirements TEXT,
+    newsletter BOOLEAN DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)
+`;
+
+connection.query(createTableQuery, (err) => {
+  if (err) throw err;
+  console.log("🗄️ Table `registrations` is ready");
+});
+
+module.exports = {};

@@ -1,36 +1,35 @@
-// src/components/FooterSection.jsx
-import React from 'react';
+import React from "react";
 
 const FooterSection = () => {
   const footerLinks = {
     event: [
-      { name: 'Schedule', href: '#schedule' },
-      { name: 'Speakers', href: '#speakers' },
-      { name: 'Registration', href: '#register' },
-      { name: 'Venue', href: '#venue' },
-      { name: 'Sponsors', href: '#sponsors' }
+      { name: "Schedule", href: "#schedule" },
+      { name: "Speakers", href: "#speakers" },
+      { name: "Registration", href: "#register" },
+      { name: "Venue", href: "#venue" },
+      { name: "Sponsors", href: "#sponsors" },
     ],
     company: [
-      { name: 'About Finastra', href: '#about' },
-      { name: 'Solutions', href: '#' },
-      { name: 'Careers', href: '#' },
-      { name: 'Press', href: '#' },
-      { name: 'Contact', href: '#' }
+      { name: "About Finastra", href: "#about" },
+      { name: "Solutions", href: "#" },
+      { name: "Careers", href: "#" },
+      { name: "Press", href: "#" },
+      { name: "Contact", href: "#" },
     ],
     support: [
-      { name: 'Help Center', href: '#' },
-      { name: 'Event FAQ', href: '#' },
-      { name: 'Tech Support', href: '#' },
-      { name: 'Accessibility', href: '#' },
-      { name: 'Privacy Policy', href: '#' }
-    ]
+      { name: "Help Center", href: "#" },
+      { name: "Event FAQ", href: "#" },
+      { name: "Tech Support", href: "#" },
+      { name: "Accessibility", href: "#" },
+      { name: "Privacy Policy", href: "#" },
+    ],
   };
 
   const socialLinks = [
-    { name: 'LinkedIn', icon: '💼', href: '#' },
-    { name: 'Twitter', icon: '🐦', href: '#' },
-    { name: 'YouTube', icon: '📺', href: '#' },
-    { name: 'Facebook', icon: '📘', href: '#' }
+    { name: "LinkedIn", icon: "💼", href: "#" },
+    { name: "Twitter", icon: "🐦", href: "#" },
+    { name: "YouTube", icon: "📺", href: "#" },
+    { name: "Facebook", icon: "📘", href: "#" },
   ];
 
   return (
@@ -45,10 +44,11 @@ const FooterSection = () => {
                 FINASTRA
               </div>
               <p className="text-gray-400 mb-6 leading-relaxed">
-                Finastra is the world's third largest fintech company, powering the future of finance 
-                through innovative technology solutions and collaborative ecosystems.
+                Finastra is the world's third largest fintech company, powering
+                the future of finance through innovative technology solutions
+                and collaborative ecosystems.
               </p>
-              
+
               {/* Social Links */}
               <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (
@@ -63,10 +63,12 @@ const FooterSection = () => {
                 ))}
               </div>
             </div>
-            
+
             {/* Event Links */}
             <div>
-              <h4 className="text-lg font-semibold mb-6 text-purple-300">Event</h4>
+              <h4 className="text-lg font-semibold mb-6 text-purple-300">
+                Event
+              </h4>
               <ul className="space-y-3">
                 {footerLinks.event.map((link, index) => (
                   <li key={index}>
@@ -80,10 +82,12 @@ const FooterSection = () => {
                 ))}
               </ul>
             </div>
-            
+
             {/* Company Links */}
             <div>
-              <h4 className="text-lg font-semibold mb-6 text-purple-300">Company</h4>
+              <h4 className="text-lg font-semibold mb-6 text-purple-300">
+                Company
+              </h4>
               <ul className="space-y-3">
                 {footerLinks.company.map((link, index) => (
                   <li key={index}>
@@ -97,10 +101,12 @@ const FooterSection = () => {
                 ))}
               </ul>
             </div>
-            
+
             {/* Support Links */}
             <div>
-              <h4 className="text-lg font-semibold mb-6 text-purple-300">Support</h4>
+              <h4 className="text-lg font-semibold mb-6 text-purple-300">
+                Support
+              </h4>
               <ul className="space-y-3">
                 {footerLinks.support.map((link, index) => (
                   <li key={index}>
@@ -129,7 +135,7 @@ const FooterSection = () => {
                 <div className="text-sm text-gray-400">Two Full Days</div>
               </div>
             </div>
-            
+
             <div className="flex items-center justify-center space-x-3">
               <span className="text-2xl">📍</span>
               <div>
@@ -137,7 +143,7 @@ const FooterSection = () => {
                 <div className="text-sm text-gray-400">Downtown Location</div>
               </div>
             </div>
-            
+
             <div className="flex items-center justify-center space-x-3">
               <span className="text-2xl">🎫</span>
               <div>
@@ -145,7 +151,7 @@ const FooterSection = () => {
                 <div className="text-sm text-gray-400">Limited Time Offer</div>
               </div>
             </div>
-            
+
             <div className="flex items-center justify-center space-x-3">
               <span className="text-2xl">👥</span>
               <div>
@@ -164,12 +170,20 @@ const FooterSection = () => {
             <div className="text-gray-400 text-sm">
               © 2024 Finastra. All rights reserved.
             </div>
-            
+
             <div className="flex flex-wrap justify-center md:justify-end space-x-6 text-sm text-gray-400">
-              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Code of Conduct</a>
+              <a href="#" className="hover:text-white transition-colors">
+                Terms of Service
+              </a>
+              <a href="#" className="hover:text-white transition-colors">
+                Privacy Policy
+              </a>
+              <a href="#" className="hover:text-white transition-colors">
+                Cookie Policy
+              </a>
+              <a href="#" className="hover:text-white transition-colors">
+                Code of Conduct
+              </a>
             </div>
           </div>
         </div>

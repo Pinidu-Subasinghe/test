@@ -1,4 +1,3 @@
-// src/components/SpeakersSection.jsx
 import React, { useState, useEffect, useRef } from "react";
 
 const SpeakersSection = () => {
